@@ -10,6 +10,10 @@ import './Services.css'
 const Services = (props) => {
     const [service,setService] = useState();
     console.log('service props',props)
+    const handleServiceClick = (id) => {
+        sessionStorage.setItem('service_id',id)
+
+    }
 
     useEffect(() => {
         props.hitprojectserviceAPI()
@@ -28,14 +32,16 @@ const Services = (props) => {
             {
                 service && service.map((servicelem, serviceindex) => {
                     return(
-                        <div style={{cursor:'pointer',display:'inline-block',borderRadius:'10px'}}>
+                        <section className="" style={{cursor:'pointer',display:'inline-block',borderRadius:'10px', marginLeft: '3rem'}}>
                         <Link to='/service-detail'>
+                        <div onClick={() => handleServiceClick(servicelem.id)}>
                         <div className="service-card" >
                             <img className="service-img" src={servicelem.image} alt="brokenimg"/>
                             <p className="service-title">{servicelem.title}</p>
                         </div>
-                        </Link>
                         </div>
+                        </Link>
+                        </section>
                     )
                 })
             }
