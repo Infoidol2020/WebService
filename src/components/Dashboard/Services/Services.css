@@ -1,5 +1,6 @@
 .service-wrap{
-    background: rgba(34, 35, 37, 0.9);
+    /* background: rgba(34, 35, 37, 0.9); */
+    background: black;
     height: auto;
     width: 98.8vw;
     padding-top: 1rem;
@@ -21,6 +22,7 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
     width: 21vw;
     height: 33vh;
+    border-radius: 10px;
     /* margin-left: 3vw; */
     padding: 2rem;
     text-align: center;

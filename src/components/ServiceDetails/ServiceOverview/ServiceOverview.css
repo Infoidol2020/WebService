@@ -1,0 +1,7 @@
+.service-overview-flex{
+    display: flex;
+}
+.sub-service-desimage{
+    width:20vw;
+    height: 20vh;
+}

@@ -33,12 +33,12 @@ const Services = (props) => {
                 service && service.map((servicelem, serviceindex) => {
                     return(
                         <section className="" style={{cursor:'pointer',display:'inline-block',borderRadius:'10px', marginLeft: '3rem'}}>
-                        <Link to='/service-detail'>
+                        <Link to='/service-detail' style={{textDecoration:'none'}}>
                         <div onClick={() => handleServiceClick(servicelem.id)}>
-                        <div className="service-card" >
-                            <img className="service-img" src={servicelem.image} alt="brokenimg"/>
-                            <p className="service-title">{servicelem.title}</p>
-                        </div>
+                            <div className="service-card" >
+                                <img className="service-img" src={servicelem.image} alt="brokenimg"/>
+                                <p className="service-title">{servicelem.title}</p>
+                            </div>
                         </div>
                         </Link>
                         </section>

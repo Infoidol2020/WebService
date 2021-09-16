@@ -1,6 +1,9 @@
 import React,{useEffect} from 'react'
 import { connect } from 'react-redux'
 import { hitsubServiceAPI } from '../../Redux/SubService'
+import NavBar from '../Dashboard/Navbar/NavBar'
+import Banner from './Banner/Banner'
+import ServiceOverView from './ServiceOverview/ServiceOverview'
 
 
 const ServiceDetail = (props) => {
@@ -12,8 +15,10 @@ const ServiceDetail = (props) => {
     },[])
 
     return (
-        <div style={{background:'yellow'}}>
-            
+        <div>
+            <NavBar/>
+            <Banner {...props}/>
+            <ServiceOverView {...props}/>
         </div>
     )
 }
