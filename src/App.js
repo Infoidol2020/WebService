@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import ServiceDetail from './components/ServiceDetails/ServiceDetail';
+import IndustriesDetail from './components/IndustriesDetail/IndustriesDetail';
 
 
 
@@ -18,6 +19,8 @@ function App() {
           
           <Route exact path="/" component={Dashboard} />
           <Route path="/service-detail" component={ServiceDetail} />
+          <Route path="/industry-detail" component={IndustriesDetail} />
+
 
         </div>
       </Switch>

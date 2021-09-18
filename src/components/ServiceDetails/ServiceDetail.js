@@ -1,9 +1,14 @@
 import React,{useEffect} from 'react'
 import { connect } from 'react-redux'
 import { hitsubServiceAPI } from '../../Redux/SubService'
+import Footer from '../Dashboard/Footer/Footer'
 import NavBar from '../Dashboard/Navbar/NavBar'
 import Banner from './Banner/Banner'
+import Service from './Service/Service'
 import ServiceOverView from './ServiceOverview/ServiceOverview'
+import SubService from './SubService/SubService'
+import Tools from './Tools/Tools'
+import Trends from './Trends/Trends'
 
 
 const ServiceDetail = (props) => {
@@ -19,6 +24,11 @@ const ServiceDetail = (props) => {
             <NavBar/>
             <Banner {...props}/>
             <ServiceOverView {...props}/>
+            <SubService {...props} />
+            <Trends {...props}/>
+            <Service {...props}/>
+            <Tools {...props}/>
+            <Footer/>
         </div>
     )
 }

@@ -2,12 +2,15 @@ import {React,useEffect,useState} from 'react'
 import { connect } from 'react-redux'
 import { hitprojectIndustriesApi } from '../../../Redux/ProjectIndustries/ProjectIndustriesAction'
 import Slider from "react-slick";
+import {Link} from 'react-router-dom'
 import './ProjectIndustries.css'
 
 const ProjectIndustries = (props) => {
     console.log('props indus',props)
     const [industries,setInddustries] = useState();
-
+    const handleIndustryClick = (id) => {
+        sessionStorage.setItem('industry_id',id)
+    }
     const settings = {
         dots: true,
         infinite: true,
@@ -39,9 +42,11 @@ const ProjectIndustries = (props) => {
             {
                 industries && industries.map((industriesElem,industriesIndex) => {
                     return(
-                        <section className="industries-slider">
+                        <section className="industries-slider" onClick={() => handleIndustryClick(industriesElem.id)}>
+                        <Link to='/industry-detail' style={{textDecoration:'none'}}>
                             <img className="industriesElem-img" src={industriesElem.image} alt="indus-img-broken" />
                             <div className="industriesElem-name">{industriesElem.industries}</div>
+                        </Link>
                         </section>
                     )
                 })

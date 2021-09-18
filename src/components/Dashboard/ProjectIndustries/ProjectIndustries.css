@@ -12,6 +12,7 @@ p.product-categories {
 .industriesElem-name {
     font-size: 1.3rem;
     font-weight: 500;
+    color: whitesmoke;
 }
 .project-industries {
     background: black;

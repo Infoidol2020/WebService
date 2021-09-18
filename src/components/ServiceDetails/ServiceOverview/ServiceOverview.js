@@ -14,8 +14,8 @@ const ServiceOverView = (props) => {
             }
     },[props.SubService.SubService.subServiceApi.subServiceSuccess])
     return (
-        <div>
-            <p> OverView</p>
+        <div className="service-overview">
+            <p className="overview-heading"> Spotlight</p>
             <div className="service-overview-flex">
                 <p className="sub-service-descip">{descrip}</p>
                 <img className="sub-service-desimage" src={desImage} alt="brokenImage"/>
