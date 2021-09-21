@@ -16,7 +16,7 @@ import GetInTouch from '../Dashboard/GetIntouch/GetInTouch'
 
 const Dashboard = () => {
     return (
-        <div>
+        <div id="dashboard">
             <NavBar/>
           {/* <Navbar2/> */}
           {/* <Banner/> */}

@@ -48,7 +48,7 @@ const NavBar = (props) => {
             <section>
             <Navbar className="navbar-wrap" expand="lg">
                 <Container>
-                <Navbar.Brand href="/home">
+                <Navbar.Brand href="">
             <img
                 src={infoidologo}
                 width="184vw"
@@ -61,7 +61,7 @@ const NavBar = (props) => {
                     <div className="navbar-collapse">
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href='/home'>Home</Nav.Link>
+                        <Nav.Link href='/#dashboard'>Home</Nav.Link>
                         <DropdownButton id="dropdown-basic-button" title="Services">
                         {
                             NavBarservices && NavBarservices.map((elem,index) => {
@@ -86,7 +86,7 @@ const NavBar = (props) => {
                                             {/* <Link to='/industry-detail' style={{textDecoration:'none'}}> */}
                                                 <Dropdown.Item 
                                                     style={{background: 'none',border: '0px'}}
-                                                    // href='/industry-detail' 
+                                                    href='/industry-detail' 
                                                     onClick={() => handleNavIndustryClick(Industrieselem.id)}>
                                                         {Industrieselem.industries}
                                                 </Dropdown.Item>
