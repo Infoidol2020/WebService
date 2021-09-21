@@ -30,3 +30,7 @@
     background: #2b0103;
     margin-bottom: 2rem;
 }
+button#dropdown-basic-button {
+    background: none;
+    border: none;
+}

@@ -12,6 +12,7 @@ import Aspects from '../Dashboard/Aspects/Aspects'
 import TeamMember from '../Dashboard/TeamMember/TeamMember'
 import Connect from '../Dashboard/Connect/Connect'
 import Footer from '../Dashboard/Footer/Footer'
+import GetInTouch from '../Dashboard/GetIntouch/GetInTouch'
 
 const Dashboard = () => {
     return (
@@ -29,6 +30,7 @@ const Dashboard = () => {
             <Aspects/>
             <TeamMember/>
             <Connect/>
+            <GetInTouch/>
             <Footer/>
         </div>
     )

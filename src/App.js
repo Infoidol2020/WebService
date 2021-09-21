@@ -17,10 +17,10 @@ function App() {
       <Switch>
         <div className="app-container">
           
-          <Route exact path="/" component={Dashboard} />
+        <Route path="/home" component={Dashboard} />
           <Route path="/service-detail" component={ServiceDetail} />
           <Route path="/industry-detail" component={IndustriesDetail} />
-
+          {/* <Route path="/home" component={Dashboard} /> */}
 
         </div>
       </Switch>

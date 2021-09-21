@@ -8,11 +8,12 @@ import './Services.css'
 
 
 const Services = (props) => {
+    // console.log( 'NavBar Services props', props)
+
     const [service,setService] = useState();
-    console.log('service props',props)
+    // console.log('service props',props)
     const handleServiceClick = (id) => {
         sessionStorage.setItem('service_id',id)
-
     }
 
     useEffect(() => {
